@@ -124,10 +124,6 @@ class VaryTempWithHeight(Script):
                                 set_initial = True
                                 output_line += write_temp(start_temp)
 
-                            # If were below the height buffer or at 0, we don't really
-                            # need to figure anything out here.
-                            break
-
                         # Determine new temperature
                         new_temp = start_temp - (layer * temp_dec)
 
