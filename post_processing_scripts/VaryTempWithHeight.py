@@ -73,12 +73,9 @@ class VaryTempWithHeight(Script):
         # Set our command regex
         # ex. G0 X60.989 Y60.989 Z1.77
         # ex. G0 F7200 X104.295 Y112.483 Z11.1
-        cmd_re = re.compile(
-            (
-                r"G[0-9]+\.?[0-9]* (?:F[0-9]+\.?[0-9]* )?"
-                r"X[0-9]+\.?[0-9]* Y[0-9]+\.?[0-9]* Z([0-9]+\.?[0-9]*)"
-            )
-        )
+
+        cmd_re = re.compile('^G[^ ]+.* Z([0-9]+\\.?[0-9]*)')
+
 
         # Set initial state
         output = []
