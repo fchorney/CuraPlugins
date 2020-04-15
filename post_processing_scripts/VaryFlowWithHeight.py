@@ -104,7 +104,7 @@ class VaryFlowWithHeight(Script):
                         # flow, then write the gcode command
                         if new_flow < current_flow:
                             current_flow = new_flow
-                            output_line += ';TYPE:CUSTOM\n'
+                            output_line += ';Post-processing: Vary Flow with Height by Fernando Chorney\n'
                             output_line += 'M221 S%d\n' % new_flow
                 # output the current line
                 output_line += '%s\n' % line
