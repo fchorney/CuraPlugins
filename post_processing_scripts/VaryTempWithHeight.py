@@ -137,4 +137,4 @@ class VaryTempWithHeight(Script):
 
 
 def write_temp(temp):
-    return ";TYPE:CUSTOM\nM104 S%d\n" % temp
+    return ";Post-processing: Vary Temp with Height by Fernando Chorney\nM104 S%d\n" % temp
