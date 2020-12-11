@@ -32,7 +32,7 @@ class VaryTempWithHeight(Script):
                         "changes by this much"
                     ),
                     "unit": "mm",
-                    "type": "int",
+                    "type": "float",
                     "default_value": 10,
                 },
                 "temperature_decrement": {
